@@ -1,7 +1,7 @@
 === Posts filter multiselect ===
 Contributors: tmatsuur
 Donate link: http://elearn.jp/wpman/column/posts-filter-multiselect.html
-Tags: login secure
+Tags: posts filter multiselect
 Requires at least: 4.1.0
 Tested up to: 4.1.1
 Stable tag: 1.0.1
