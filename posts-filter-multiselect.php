@@ -4,7 +4,7 @@
  Plugin URI: http://elearn.jp/wpman/column/posts-filter-multiselect.html
  Description: Pull-down list in the posts filter of the single choice is changed to multi-select.
  Author: tmatsuur
- Version: 1.0.1
+ Version: 1.0.2
  Author URI: http://12net.jp/
  */
 
@@ -15,7 +15,7 @@
 
 define( 'POSTS_FILTER_MULTISELECT_DOMAIN', 'posts-filter-multiselect' );
 define( 'POSTS_FILTER_MULTISELECT_DB_VERSION_NAME', 'posts-filter-multiselect-db-version' );
-define( 'POSTS_FILTER_MULTISELECT_DB_VERSION', '1.0.1' );
+define( 'POSTS_FILTER_MULTISELECT_DB_VERSION', '1.0.2' );
 
 $plugin_posts_filter_multiselect = new posts_filter_multiselect();
 
@@ -90,7 +90,7 @@ class posts_filter_multiselect {
 	function admin_enqueue_scripts( $hook_suffix ) {
 		wp_enqueue_style( 'jquery-ui-css', plugins_url( basename( dirname( __FILE__ ) ).'/css/themes/'.$this->ui_theme.'/jquery-ui.min.css' ) );
 		wp_enqueue_style( POSTS_FILTER_MULTISELECT_DOMAIN.'-style', plugins_url( basename( dirname( __FILE__ ) ).'/css/jquery.multiselect.css' ) );
-		wp_enqueue_script( POSTS_FILTER_MULTISELECT_DOMAIN.'-script', plugins_url( basename( dirname( __FILE__ ) ).'/js/jquery.multiselect.min.js' ), array( 'jquery-ui-widget' ) );
+		wp_enqueue_script( POSTS_FILTER_MULTISELECT_DOMAIN.'-script', plugins_url( basename( dirname( __FILE__ ) ).'/js/jquery.multiselect.min.js' ), array( 'jquery-ui-core', 'jquery-ui-widget' ) );
 	}
 	function admin_head() {
 ?>

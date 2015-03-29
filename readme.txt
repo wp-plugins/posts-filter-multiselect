@@ -1,9 +1,9 @@
 === Posts filter multiselect ===
 Contributors: tmatsuur
 Donate link: http://elearn.jp/wpman/column/posts-filter-multiselect.html
-Tags: posts filter multiselect
+Tags: login secure
 Requires at least: 4.1.0
-Tested up to: 4.1.1
+Tested up to: 4.2.0 beta-3
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -56,6 +56,9 @@ In the near future, we plan to be able to change in the properties page of this 
 1. Dropdown menu of posts filter when using plug-in.
 
 == Changelog ==
+
+= 1.0.2 =
+* Add the `jquery-ui-core` to `script depends`.
 
 = 1.0.1 =
 * The first release.
